@@ -1,0 +1,150 @@
+<?php
+// PHP variables for dynamic content
+$page_title = "Cookie Policy - FormAndFit";
+$company_name = "FormAndFit";
+$effective_date = "July 1, 2025"; 
+$website_url = "www.formandfit.com"; // Placeholder URL
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $page_title; ?></title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .mobile-menu { transition: all 0.3s ease; }
+        .mobile-menu.open { transform: translateX(0); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold text-gray-900"><?php echo $company_name; ?></span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.php" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">Home</a>
+                        <a href="privacy-policy.php" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">Privacy Policy</a>
+                        <a href="terms-of-service.php" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">Terms of Service</a>
+                        <a href="cookie-policy.php" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-red-500 text-sm font-medium">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform translate-x-full hidden">
+            <div class="flex justify-end p-4">
+                <button id="close-menu" class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="../index.php" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+                <a href="privacy-policy.php" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Privacy Policy</a>
+                <a href="terms-of-service.php" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Terms of Service</a>
+                <a href="cookie-policy.php" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-gray-900 hover:bg-gray-50">Cookie Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gray-900 py-20 sm:py-24 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl tracking-tight font-extrabold text-white mb-4">
+                Cookie Policy
+            </h1>
+            <p class="mt-3 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                Effective Date: **<?php echo $effective_date; ?>**
+            </p>
+        </div>
+    </header>
+
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-gray-700">
+            <p class="font-semibold text-lg text-gray-900">
+                This Cookie Policy explains what cookies are and how we use them on the <?php echo $company_name; ?> website, <?php echo $website_url; ?>. By continuing to use our website, you consent to the use of cookies.
+            </p>
+
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2">1. What are Cookies?</h2>
+                <p>Cookies are small text files placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.</p>
+                <p>Cookies do many different things, such as allowing you to navigate between pages efficiently, remembering your preferences, and generally improving the user experience.</p>
+            </div>
+
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2">2. How We Use Cookies</h2>
+                <p>As this is a design showcase site, we keep cookie usage to a minimum. We use cookies primarily for:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>**Strictly Necessary Cookies:** These are essential to provide you with basic services available through our website, such as managing session state. The website cannot function properly without these cookies.</li>
+                    <li>**Performance/Analytics Cookies:** These cookies allow us to collect information about how visitors use the website (e.g., which pages are most popular). This helps us improve the site's design and performance. The data collected is aggregated and therefore anonymous.</li>
+                </ul>
+                <p class="mt-4 font-medium text-gray-900">
+                    **We do not use advertising, targeting, or third-party marketing cookies** on this showcase website.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2">3. Managing Your Cookie Preferences</h2>
+                <p>You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by managing the settings within your web browser. </p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Most browsers allow you to refuse cookies.</li>
+                    <li>If you choose to reject cookies, you may still use our website, but your access to some functionality and areas may be restricted.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-red-600 py-16 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Explore Our Full Legal Documentation</h2>
+            <p class="text-lg sm:text-xl text-red-100 mb-8">
+                Learn how this policy fits into our rules for using the site and general data handling.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="terms-of-service.php" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-red-50 transition duration-150 ease-in-out shadow-lg">
+                    Review Terms of Service
+                </a>
+                <a href="privacy-policy.php" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-red-600 transition duration-150 ease-in-out shadow-lg">
+                    View Privacy Policy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white p-10 text-center">
+        <p>&copy; <?php echo date("Y"); ?> <?php echo $company_name; ?>. All rights <a href="/formandfit/admin/admin_master.php" class="text-white-400 hover:text-red-200 transition duration-150">reserved</a>.</p>
+    </footer></p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.remove('hidden');
+            setTimeout(() => { menu.classList.add('open'); menu.classList.remove('translate-x-full'); }, 10);
+        });
+        document.getElementById('close-menu').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.remove('open');
+            menu.classList.add('translate-x-full');
+            setTimeout(() => { menu.classList.add('hidden'); }, 300);
+        });
+
+        // Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
