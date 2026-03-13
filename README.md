@@ -99,8 +99,15 @@ FormAndFit/
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+## 📸 Screenshots
 
+![Homepage](https://github.com/user-attachments/assets/2c6f8e8b-c8be-48ac-abbf-50b28671f864)
+
+![Products](https://github.com/user-attachments/assets/68e4a7fe-8d66-48b5-bfd9-5051fa1f2c62)
+
+![Product Detail](https://github.com/user-attachments/assets/f39da0ad-495d-46f2-91f6-c12d2b535db2)
+
+![Admin Panel](https://github.com/user-attachments/assets/80b742b0-62d5-44cb-a4be-cf348cc5dab9)
 ---
 
 ## 👨‍💻 Author
